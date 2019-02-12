@@ -13,7 +13,20 @@
 		04B7C7B22213643C0055F5EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B7C7B12213643C0055F5EE /* Assets.xcassets */; };
 		04B7C7B52213643C0055F5EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B7C7B32213643C0055F5EE /* LaunchScreen.storyboard */; };
 		04B7C7BF2213652F0055F5EE /* CurrencuTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C7BE2213652F0055F5EE /* CurrencuTextField.swift */; };
+		04B7C7CB2213706F0055F5EE /* FreeLancing_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C7CA2213706F0055F5EE /* FreeLancing_AppTests.swift */; };
+		04B7C7D4221370940055F5EE /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C7D3221370940055F5EE /* Wage.swift */; };
+		04B7C7D52213722B0055F5EE /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C7D3221370940055F5EE /* Wage.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04B7C7CD2213706F0055F5EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04B7C79F2213643A0055F5EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04B7C7A62213643A0055F5EE;
+			remoteInfo = "FreeLancing App";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		04B7C7A72213643A0055F5EE /* FreeLancing App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreeLancing App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +37,21 @@
 		04B7C7B42213643C0055F5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B7C7B62213643C0055F5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04B7C7BE2213652F0055F5EE /* CurrencuTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencuTextField.swift; sourceTree = "<group>"; };
+		04B7C7C82213706F0055F5EE /* FreeLancing AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FreeLancing AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B7C7CA2213706F0055F5EE /* FreeLancing_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeLancing_AppTests.swift; sourceTree = "<group>"; };
+		04B7C7CC2213706F0055F5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B7C7D3221370940055F5EE /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		04B7C7A42213643A0055F5EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04B7C7C52213706F0055F5EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				04B7C7A92213643A0055F5EE /* FreeLancing App */,
+				04B7C7C92213706F0055F5EE /* FreeLancing AppTests */,
 				04B7C7A82213643A0055F5EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				04B7C7A72213643A0055F5EE /* FreeLancing App.app */,
+				04B7C7C82213706F0055F5EE /* FreeLancing AppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,6 +82,7 @@
 		04B7C7A92213643A0055F5EE /* FreeLancing App */ = {
 			isa = PBXGroup;
 			children = (
+				04B7C7D2221370830055F5EE /* Model */,
 				04B7C7BD221364E50055F5EE /* Views */,
 				04B7C7BC221364D80055F5EE /* Controllers */,
 				04B7C7AA2213643A0055F5EE /* AppDelegate.swift */,
@@ -83,6 +110,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		04B7C7C92213706F0055F5EE /* FreeLancing AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				04B7C7CA2213706F0055F5EE /* FreeLancing_AppTests.swift */,
+				04B7C7CC2213706F0055F5EE /* Info.plist */,
+			);
+			path = "FreeLancing AppTests";
+			sourceTree = "<group>";
+		};
+		04B7C7D2221370830055F5EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04B7C7D3221370940055F5EE /* Wage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,6 +147,24 @@
 			productReference = 04B7C7A72213643A0055F5EE /* FreeLancing App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		04B7C7C72213706F0055F5EE /* FreeLancing AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B7C7CF2213706F0055F5EE /* Build configuration list for PBXNativeTarget "FreeLancing AppTests" */;
+			buildPhases = (
+				04B7C7C42213706F0055F5EE /* Sources */,
+				04B7C7C52213706F0055F5EE /* Frameworks */,
+				04B7C7C62213706F0055F5EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04B7C7CE2213706F0055F5EE /* PBXTargetDependency */,
+			);
+			name = "FreeLancing AppTests";
+			productName = "FreeLancing AppTests";
+			productReference = 04B7C7C82213706F0055F5EE /* FreeLancing AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -115,6 +177,10 @@
 				TargetAttributes = {
 					04B7C7A62213643A0055F5EE = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					04B7C7C72213706F0055F5EE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 04B7C7A62213643A0055F5EE;
 					};
 				};
 			};
@@ -132,6 +198,7 @@
 			projectRoot = "";
 			targets = (
 				04B7C7A62213643A0055F5EE /* FreeLancing App */,
+				04B7C7C72213706F0055F5EE /* FreeLancing AppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -147,6 +214,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04B7C7C62213706F0055F5EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -155,12 +229,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B7C7BF2213652F0055F5EE /* CurrencuTextField.swift in Sources */,
+				04B7C7D4221370940055F5EE /* Wage.swift in Sources */,
 				04B7C7AD2213643B0055F5EE /* MainVC.swift in Sources */,
 				04B7C7AB2213643A0055F5EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04B7C7C42213706F0055F5EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B7C7CB2213706F0055F5EE /* FreeLancing_AppTests.swift in Sources */,
+				04B7C7D52213722B0055F5EE /* Wage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04B7C7CE2213706F0055F5EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04B7C7A62213643A0055F5EE /* FreeLancing App */;
+			targetProxy = 04B7C7CD2213706F0055F5EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		04B7C7AE2213643B0055F5EE /* Main.storyboard */ = {
@@ -334,6 +426,46 @@
 			};
 			name = Release;
 		};
+		04B7C7D02213706F0055F5EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7S769X964;
+				INFOPLIST_FILE = "FreeLancing AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmadshraby.FreeLancing-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeLancing App.app/FreeLancing App";
+			};
+			name = Debug;
+		};
+		04B7C7D12213706F0055F5EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F7S769X964;
+				INFOPLIST_FILE = "FreeLancing AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ahmadshraby.FreeLancing-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FreeLancing App.app/FreeLancing App";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -351,6 +483,15 @@
 			buildConfigurations = (
 				04B7C7BA2213643C0055F5EE /* Debug */,
 				04B7C7BB2213643C0055F5EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B7C7CF2213706F0055F5EE /* Build configuration list for PBXNativeTarget "FreeLancing AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B7C7D02213706F0055F5EE /* Debug */,
+				04B7C7D12213706F0055F5EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
