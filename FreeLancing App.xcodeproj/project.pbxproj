@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		04B7C7AB2213643A0055F5EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C7AA2213643A0055F5EE /* AppDelegate.swift */; };
-		04B7C7AD2213643B0055F5EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C7AC2213643B0055F5EE /* ViewController.swift */; };
+		04B7C7AD2213643B0055F5EE /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C7AC2213643B0055F5EE /* MainVC.swift */; };
 		04B7C7B02213643B0055F5EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B7C7AE2213643B0055F5EE /* Main.storyboard */; };
 		04B7C7B22213643C0055F5EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B7C7B12213643C0055F5EE /* Assets.xcassets */; };
 		04B7C7B52213643C0055F5EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B7C7B32213643C0055F5EE /* LaunchScreen.storyboard */; };
+		04B7C7BF2213652F0055F5EE /* CurrencuTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B7C7BE2213652F0055F5EE /* CurrencuTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04B7C7A72213643A0055F5EE /* FreeLancing App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FreeLancing App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B7C7AA2213643A0055F5EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04B7C7AC2213643B0055F5EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		04B7C7AC2213643B0055F5EE /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		04B7C7AF2213643B0055F5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04B7C7B12213643C0055F5EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04B7C7B42213643C0055F5EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04B7C7B62213643C0055F5EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B7C7BE2213652F0055F5EE /* CurrencuTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencuTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		04B7C7A92213643A0055F5EE /* FreeLancing App */ = {
 			isa = PBXGroup;
 			children = (
+				04B7C7BD221364E50055F5EE /* Views */,
+				04B7C7BC221364D80055F5EE /* Controllers */,
 				04B7C7AA2213643A0055F5EE /* AppDelegate.swift */,
-				04B7C7AC2213643B0055F5EE /* ViewController.swift */,
 				04B7C7AE2213643B0055F5EE /* Main.storyboard */,
 				04B7C7B12213643C0055F5EE /* Assets.xcassets */,
 				04B7C7B32213643C0055F5EE /* LaunchScreen.storyboard */,
 				04B7C7B62213643C0055F5EE /* Info.plist */,
 			);
 			path = "FreeLancing App";
+			sourceTree = "<group>";
+		};
+		04B7C7BC221364D80055F5EE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04B7C7AC2213643B0055F5EE /* MainVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04B7C7BD221364E50055F5EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04B7C7BE2213652F0055F5EE /* CurrencuTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04B7C7AD2213643B0055F5EE /* ViewController.swift in Sources */,
+				04B7C7BF2213652F0055F5EE /* CurrencuTextField.swift in Sources */,
+				04B7C7AD2213643B0055F5EE /* MainVC.swift in Sources */,
 				04B7C7AB2213643A0055F5EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
